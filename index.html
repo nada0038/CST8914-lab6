@@ -112,4 +112,41 @@
         <h1>Welcome to Hi/Max Real Estate</h1>
         <p>Hi/Max Real Estate & Houses</p>
 
-		
+        <p>Buying or selling a home is likely the largest and most important transaction you’ll ever make. That’s why so many trust Hi/MAX Real Estate, which according to Canadian consumers, has been voted #1 Most Trusted Real Estate Agents in Canada six times in a row.</p>
+        <p><a href="#" aria-label="Get started with Hi/Max Real Estate" role="link">Let's get started!</a></p>
+
+<!--  Specific roles in list items for enhancing accessibility -->
+        <div class="row">
+            <div class="col-md-4 pull-right" role="complementary" aria-labelledby="related-resources">
+                <h2 id="related-resources">Related Resources</h2>
+                <p>It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next move.</p>
+                <ul role="navigation" aria-label="Related resources links">
+                    <li role="link to upgrading house">
+                        <a href="#" target="_blank" aria-label="Looking for an upgrade? (opens in a new tab)">Looking for an upgrade?</a>
+                    </li>
+                    <li role="link to buying tips">
+                        <a href="#" target="_blank" aria-label="Buying tips (opens in a new tab)">Buying tips</a>
+                    </li>
+                    <li role="link to home valuation">
+                        <a href="#" target="_blank" aria-label="How much is your current home worth? (opens in a new tab)">How much is your current home worth?</a>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="col-md-8">
+                <h2 id="why-choose-hi-max" aria-label="Reasons to Choose HI/Max">Why Choosing HI/Max</h2>
+                <p id="hi-max-description" aria-label="HI/Max agents are dedicated to providing exceptional service and community involvement.">Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is extremely community-focused, and our agents are too!</p>
+                <h3 id="hi-max-stats" aria-label="Statistics and Facts about HI/Max">Stats of HI/Max</h3>
+
+<!-- Better table accessibility by implementing ARIA roles, headers, and properties.-->
+
+            <table class="table table-bordered" role="table" aria-label="Real Estate Market Data">
+                <thead>
+                    <tr role="row" aria-labelledby="year-header sold-properties-header avg-price-header">
+                        <th id="year-header" rowspan="2" scope="col" aria-label="Year of Data">Year</th>
+                        <th id="sold-properties-header" colspan="2" aria-label="Sold Properties">Sold Properties</th>
+                        <th id="avg-price-header" colspan="2" aria-label="Average Selling Price">Average Selling Price</th>
+                    </tr>
+                    <tr role="row" aria-labelledby="quebec-header ontario-header single-house-header condo-header">
+                        <th id="quebec-header" scope="col" aria-label="Number of properties sold in Quebec">Quebec</th>
