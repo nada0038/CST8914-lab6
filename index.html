@@ -19,48 +19,55 @@
     <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/cdts/cdtsapps.css">
     <style>
         .social a svg {
-    width: 30px;
-    fill: #99a9c8;
+            width: 30px;
+            fill: #99a9c8;
         }
 
-    p {
-        margin-top: 0.1rem; /* Reduced the spacing above paragraphs */
-        margin-bottom: 0.1rem; /* Kept minimal spacing beneath paragraphs */
-    }
+        p {
+            margin-top: 0.1rem;
+            margin-bottom: 0.1rem;
+        }
 
-    table {
-        width: 100%; /* Table set to full width*/
-        border-collapse: collapse; /* Merged borders for a streamlined appearance */
-        background-color: #ffffff; /* White background applied*/
-        margin-bottom: 20px; /* Added space below the table */
-    }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            border: 2px solid #000;
+        }
 
-    th, td {
-        padding: 12px; /* Ensured consistent padding for table cells */
-        text-align: center; /* Center-aligned */
-        border: 1px solid #dddddd; /* Cell border to light grey */
-    }
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #000;
+        }
 
-    thead th {
-        background-color: #444; /* Made header background more darker */
-        color: #ffffff; /* Set the header text to white.*/
-        font-weight: bold; /* Header to bold */
-    }
+        
+        thead tr:first-child th {
+            background-color: #4d4d4d;
+            color: #ffffff;
+            font-weight: bold;
+        }
 
-    th[scope="colgroup"] {
-        background-color: #666; /* Applied a slightly lighter dark background for the column groups*/
-    }
+      
+        thead tr:nth-child(2) th {
+            background-color: #7a7a7a;
+            color: #ffffff;
+            font-weight: bold;
+        }
 
-    tbody th {
-        background-color: #444; /* Adjusted the background of body header cells to match */
-        color: #ffffff; /* Changed the text color of body header cells to white */
-    }
+        tbody th {
+            background-color: #4d4d4d;
+            color: #ffffff;
+            font-weight: bold;
+        }
 
-    td {
-        color: #333333; /* Set the text color of table data cells to dark grey */
-    }
-
+        td {
+            color: #333333;
+        }
     </style>
+
 </head>
 
 <body>
@@ -78,7 +85,7 @@
             </div>
         </div>
 
-                <nav id="wb-sm" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl"
+        <nav id="wb-sm" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl"
             class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited"
             typeof="SiteNavigationElement" aria-label="Main Navigation">
             <div class="pnl-strt container nvbar">
@@ -100,113 +107,127 @@
             </div>
         </nav>
 
- <!-- Main Navigation Ends -->
+        <!-- Main Navigation Ends -->
 
-           </div>
+    </div>
 
-<!-- Main Content -->
+    <!-- Main Content -->
     <main property="mainContentOfPage" class="container" id="main-content" role="main section">
-
-<!-- Aria-label added to improve link accessibility for screen readers -->
 
         <h1>Welcome to Hi/Max Real Estate</h1>
         <p>Hi/Max Real Estate & Houses</p>
-        <p>Buying or selling a home is likely the largest and most important transaction you’ll ever make. That’s why so many trust Hi/MAX Real Estate, which according to Canadian consumers, has been voted #1 Most Trusted Real Estate Agents in Canada six times in a row.</p>
+        <p>Buying or selling a home is likely the largest and most important transaction you’ll ever make. That’s why so
+            many trust Hi/MAX Real Estate, which according to Canadian consumers, has been voted #1 Most Trusted Real
+            Estate Agents in Canada six times in a row.</p>
         <p><a href="#" aria-label="Get started with Hi/Max Real Estate" role="link">Let's get started!</a></p>
 
-<!--  Specific roles in list items for enhancing accessibility -->
         <div class="row">
             <div class="col-md-4 pull-right" role="complementary" aria-labelledby="related-resources">
                 <h2 id="related-resources">Related Resources</h2>
-                <p>It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next move.</p>
+                <p>It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next
+                    move.</p>
                 <ul role="navigation" aria-label="Related resources links">
                     <li role="link to upgrading house">
-                        <a href="#" target="_blank" aria-label="Looking for an upgrade? (opens in a new tab)">Looking for an upgrade?</a>
+                        <a href="#" target="_blank" aria-label="Looking for an upgrade? (opens in a new tab)">Looking for
+                            an upgrade?</a>
                     </li>
                     <li role="link to buying tips">
                         <a href="#" target="_blank" aria-label="Buying tips (opens in a new tab)">Buying tips</a>
                     </li>
                     <li role="link to home valuation">
-                        <a href="#" target="_blank" aria-label="How much is your current home worth? (opens in a new tab)">How much is your current home worth?</a>
+                        <a href="#" target="_blank"
+                            aria-label="How much is your current home worth? (opens in a new tab)">How much is your
+                            current home worth?</a>
                     </li>
                 </ul>
-                
+
             </div>
 
             <div class="col-md-8">
                 <h2 id="why-choose-hi-max" aria-label="Reasons to Choose HI/Max">Why Choosing HI/Max</h2>
-                <p id="hi-max-description" aria-label="HI/Max agents are dedicated to providing exceptional service and community involvement.">Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is extremely community-focused, and our agents are too!</p>
+                <p id="hi-max-description"
+                    aria-label="HI/Max agents are dedicated to providing exceptional service and community involvement.">
+                    Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is extremely
+                    community-focused, and our agents are too!</p>
                 <h3 id="hi-max-stats" aria-label="Statistics and Facts about HI/Max">Stats of HI/Max</h3>
 
-<!-- Better table accessibility by implementing ARIA roles, headers, and properties.-->
-
-            <table class="table table-bordered" role="table" aria-label="Real Estate Market Data">
-                <thead>
-                    <tr role="row" aria-labelledby="year-header sold-properties-header avg-price-header">
-                        <th id="year-header" rowspan="2" scope="col" aria-label="Year of Data">Year</th>
-                        <th id="sold-properties-header" colspan="2" aria-label="Sold Properties">Sold Properties</th>
-                        <th id="avg-price-header" colspan="2" aria-label="Average Selling Price">Average Selling Price</th>
-                    </tr>
-                    <tr role="row" aria-labelledby="quebec-header ontario-header single-house-header condo-header">
-                        <th id="quebec-header" scope="col" aria-label="Number of properties sold in Quebec">Quebec</th>
-                        <th id="ontario-header" scope="col" aria-label="Number of properties sold in Ontario">Ontario</th>
-                        <th id="single-house-header" scope="col" aria-label="Average selling price of single houses">Single House</th>
-                        <th id="condo-header" scope="col" aria-label="Average selling price of condos">Condo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr role="row" aria-labelledby="row1">
-                        <td id="row1-col1" scope="row" aria-label="Data for the year 2021">2021</td>
-                        <td id="row1-col2" aria-labelledby="quebec-header" aria-label="Number of properties sold in Quebec in 2021">50</td>
-                        <td id="row1-col3" aria-labelledby="ontario-header" aria-label="Number of properties sold in Ontario in 2021">100</td>
-                        <td id="row1-col4" aria-labelledby="single-house-header" aria-label="Average selling price of single houses in 2021">$500,00</td>
-                        <td id="row1-col5" aria-labelledby="condo-header" aria-label="Average selling price of condos in 2021">189,000</td>
-                    </tr>
-                    <tr role="row" aria-labelledby="row2">
-                        <td id="row2-col1" scope="row" aria-label="Data for the year 2022">2022</td>
-                        <td id="row2-col2" aria-labelledby="quebec-header" aria-label="Number of properties sold in Quebec in 2022">100</td>
-                        <td id="row2-col3" aria-labelledby="ontario-header" aria-label="Number of properties sold in Ontario in 2022">200</td>
-                        <td id="row2-col4" aria-labelledby="single-house-header" aria-label="Average selling price of single houses in 2022">$780,00</td>
-                        <td id="row2-col5" aria-labelledby="condo-header" aria-label="Average selling price of condos in 2022">240,000</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-
+                <table class="table table-bordered" role="table" aria-label="Real Estate Market Data">
+                    <thead>
+                        <tr role="row" aria-labelledby="year-header sold-properties-header avg-price-header">
+                            <th id="year-header" rowspan="2" scope="col" aria-label="Year of Data">Year</th>
+                            <th id="sold-properties-header" colspan="2" aria-label="Sold Properties">Sold Properties</th>
+                            <th id="avg-price-header" colspan="2" aria-label="Average Selling Price">Average Selling
+                                Price</th>
+                        </tr>
+                        <tr role="row" aria-labelledby="quebec-header ontario-header single-house-header condo-header">
+                            <th id="quebec-header" scope="col"
+                                aria-label="Number of properties sold in Quebec">Quebec</th>
+                            <th id="ontario-header" scope="col"
+                                aria-label="Number of properties sold in Ontario">Ontario</th>
+                            <th id="single-house-header" scope="col"
+                                aria-label="Average selling price of single houses">Single House</th>
+                            <th id="condo-header" scope="col"
+                                aria-label="Average selling price of condos">Condo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr role="row" aria-labelledby="row1">
+                            <td id="row1-col1" scope="row" aria-label="Data for the year 2021">2021</td>
+                            <td id="row1-col2" aria-labelledby="quebec-header"
+                                aria-label="Number of properties sold in Quebec in 2021">50</td>
+                            <td id="row1-col3" aria-labelledby="ontario-header"
+                                aria-label="Number of properties sold in Ontario in 2021">100</td>
+                            <td id="row1-col4" aria-labelledby="single-house-header"
+                                aria-label="Average selling price of single houses in 2021">$500,00</td>
+                            <td id="row1-col5" aria-labelledby="condo-header"
+                                aria-label="Average selling price of condos in 2021">189,000</td>
+                        </tr>
+                        <tr role="row" aria-labelledby="row2">
+                            <td id="row2-col1" scope="row" aria-label="Data for the year 2022">2022</td>
+                            <td id="row2-col2" aria-labelledby="quebec-header"
+                                aria-label="Number of properties sold in Quebec in 2022">100</td>
+                            <td id="row2-col3" aria-labelledby="ontario-header"
+                                aria-label="Number of properties sold in Ontario in 2022">200</td>
+                            <td id="row2-col4" aria-labelledby="single-house-header"
+                                aria-label="Average selling price of single houses in 2022">$780,00</td>
+                            <td id="row2-col5" aria-labelledby="condo-header"
+                                aria-label="Average selling price of condos in 2022">240,000</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-        
-        
 
-<!-- Merged the heading for Content D and separated each section using section tags-->
         <div>
             <h2>More Resources on How to Choose the Right Agent</h2>
             <div class="row">
-
-<!-- Content F -->
                 <section class="col-md-4">
-                    <img src="1.png" alt="Risks of Selling a Home Yourself" aria-label="Image representing risks of selling a home yourself" class="img-fluid">
+                    <img src="1.png" alt="Risks of Selling a Home Yourself"
+                        aria-label="Image representing risks of selling a home yourself" class="img-fluid">
                     <h3>What Are The Risks of Selling a Home Yourself?</h3>
-                    <p>We’ve all seen the videos, read the stories, and gasped at the images of people who thought they could conquer a project that would have been better left to the professionals.</p>
+                    <p>We’ve all seen the videos, read the stories, and gasped at the images of people who thought they
+                        could conquer a project that would have been better left to the professionals.</p>
                     <p><a href="#">Read more</a></p>
                 </section>
 
-<!-- Content G -->
                 <section class="col-md-4">
-                    <img src="2.png" alt="Questions to Ask a Real Estate Agent" aria-label="Image of a person asking questions to a real estate agent" class="img-fluid">
+                    <img src="2.png" alt="Questions to Ask a Real Estate Agent"
+                        aria-label="Image of a person asking questions to a real estate agent" class="img-fluid">
                     <h3>7 Questions to Ask a Real Estate Agent Before You Commit</h3>
-                    <p>According to research by the National Association of Realtors, there are considerable benefits to working with a real estate agent, including higher sale prices.</p>
+                    <p>According to research by the National Association of Realtors, there are considerable benefits to
+                        working with a real estate agent, including higher sale prices.</p>
                 </section>
 
-<!-- Content H -->
                 <section class="col-md-4">
-                    <img src="3.png" alt="Reasons to Hire a Real Estate Agent" aria-label="Image showing reasons to hire a real estate agent" class="img-fluid">
+                    <img src="3.png" alt="Reasons to Hire a Real Estate Agent"
+                        aria-label="Image showing reasons to hire a real estate agent" class="img-fluid">
                     <h3>8 Reasons to Hire an Agent When Selling Your Home</h3>
-                    <p>With all the many different moving parts involved in selling your home, here are eight very valid reasons to have a real estate agent on speed dial.</p>
+                    <p>With all the many different moving parts involved in selling your home, here are eight very valid
+                        reasons to have a real estate agent on speed dial.</p>
                 </section>
             </div>
         </div>
-        
+
         <div class="pagedetails">
             <dl id="wb-dtmd">
                 <dt>Date modified:</dt>
@@ -215,24 +236,23 @@
         </div>
     </main>
 
-<!-- Main content Ended -->
-
-<!-- footer section starts-->
-   
-<footer id="site-footer" role="contentinfo" aria-label="Website footer">
-    <div class="gc-sub-footer">
-      <div class="container d-flex align-items-center">
-        <div>
-          <h3 class="wb-inv">Hi/Max Real Estate</h3>
-            <ul class="footer-links">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li style="list-style: none;" class="social">
-                    <a href="https://twitter.com" aria-label="Visit Hi/Max Twitter page" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" role="img" aria-labelledby="twitter-icon-title">
-                        <title id="twitter-icon-title">Twitter</title>
-                        <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 
+    <footer id="site-footer" role="contentinfo" aria-label="Website footer">
+        <div class="gc-sub-footer">
+            <div class="container d-flex align-items-center">
+                <div>
+                    <h3 class="wb-inv">Hi/Max Real Estate</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li style="list-style: none;" class="social">
+                            <a href="https://twitter.com" aria-label="Visit Hi/Max Twitter page" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" role="img"
+                                    aria-labelledby="twitter-icon-title">
+                                    <title id="twitter-icon-title">Twitter</title>
+                                    <path
+                                        d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 
                         21.5 48 48 48h352c26.5 0 48-21.5 
                         48-48V80c0-26.5-21.5-48-48-48zm-48.9 
                         158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 
@@ -247,19 +267,15 @@
                         41.6-15.8-4.9 15.2-15.2 28-28.8 
                         36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 
                         13.1-20.1 24.7-32.9 34z"></path>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-</footer>
+    </footer>
 
-<!-- footer section ends-->
-
-    
 </body>
 
 </html>
-
